@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chatbot">
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text"
+        android:translationX="325dp"
+        android:translationY="25dp">
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:translationX="11dp"
+            android:translationY="9dp"
+            card_view:srcCompat="@drawable/home" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sendFrame"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text"
+        android:translationX="325dp"
+        android:translationY="600dp">
+
+
+        <ImageView
+            android:id="@+id/messageBtn"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            card_view:srcCompat="@drawable/baseline_send_24"
+            android:translationX="15dp"
+            android:translationY="10dp"/>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
