@@ -1,0 +1,16 @@
+Healthy:
+Fever:headache,feeling tired,sweating or shivering
+Flu:vomiting,sweating or shivering,coughing,chest pain,headache
+Covid-19:sore throat,coughing,breathing difficulty,loss of appetite,feeling tired,headache
+Common Cold:runny nose,sneezing,coughing,tired
+Asthma:long term cough,breathing difficulty,suffocated,chest feels tight
+Hyperglycemia:extreme thirst,increased appetite,vision is blurry,dry mouth,feeling tired
+Pre Diabetes:extreme thirst,increased appetite,vision is blurry,dry mouth,feeling tired
+Hypoglycemia:sweating or shivering,nauseous,light headed,feeling tired
+Pneumonia:chest pain,cough,breathing difficulty,sweating or shivering
+Stress:
+Arrhythmia:chest pain,breathing difficulty,dizziness
+Coronary Artery Disease:chest pain,breathing difficulty,swelling of arms and feet,feeling tired
+Lung Cancer:long term cough,coughing blood,body swelling,chest pain
+Breast Cancer:swelling of your breast,irritated around the breast,pain around the breast
+Leukemia:nosebleeds,bleeding gums,bone and joint pain,feeling tired
