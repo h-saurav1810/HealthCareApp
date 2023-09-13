@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:src="@drawable/user"
+        android:translationX="95dp"
+        android:translationY="15dp" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="22dp"
+        android:translationX="170dp"
+        android:translationY="30dp"
+        tools:text="Hello, Saurav !" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkUpBtn"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:text="Let's Check How You're Doing Today"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:translationY="90dp" />
+
+        <TextView
+            android:id="@+id/email_usernameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=" Last Monitored"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="25dp"
+            android:translationY="75dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/edit_text"
+            android:translationY="55dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/heart"
+                android:translationX="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:translationX="90dp"
+                android:translationY="2dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:translationX="153dp"
+                android:translationY="39dp" />
+
+            <TextView
+                android:id="@+id/lastRecordedHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/blue"
+                android:textSize="32sp"
+                android:translationX="90dp"
+                android:translationY="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/heartStatsBtn"
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                android:alpha="0.01"
+                android:text="HR"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:translationX="5dp"
+                android:translationY="8dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/edit_text"
+            android:translationY="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/temp"
+                android:translationX="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Temperature"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:translationX="90dp"
+                android:translationY="2dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="°C"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:translationX="182dp"
+                android:translationY="39dp" />
+
+            <TextView
+                android:id="@+id/lastRecordedTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---------"
+                android:textColor="@color/blue"
+                android:textSize="32sp"
+                android:translationX="90dp"
+                android:translationY="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tempStatsBtn"
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                android:alpha="0.01"
+                android:text="T"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:translationX="5dp"
+                android:translationY="8dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/edit_text"
+            android:translationY="-5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/glucose"
+                android:translationX="10dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg / dl"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:translationX="193dp"
+                android:translationY="39dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Glucose"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:translationX="90dp"
+                android:translationY="2dp" />
+
+            <TextView
+                android:id="@+id/lastRecordedGlucose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---------"
+                android:textColor="@color/blue"
+                android:textSize="32sp"
+                android:translationX="90dp"
+                android:translationY="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/glucoseStatsBtn"
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                android:alpha="0.01"
+                android:text="G"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:translationX="5dp"
+                android:translationY="8dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/edit_text"
+            android:translationY="-35dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/o2"
+                android:translationX="10dp" />
+
+            <TextView
+                android:id="@+id/lastRecordedO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/blue"
+                android:textSize="32sp"
+                android:translationX="90dp"
+                android:translationY="18dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:translationX="138dp"
+                android:translationY="39dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Oxygen (SpO2)"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:translationX="90dp"
+                android:translationY="2dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/o2StatsBtn"
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                android:alpha="0.01"
+                android:text="02"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:translationX="5dp"
+                android:translationY="8dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/illnessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=" Last Identified Diagnosis"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="25dp"
+            android:translationY="-65dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/edit_text"
+            android:translationY="-85dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/disease"
+                android:translationX="10dp"
+                android:translationY="3dp"/>
+
+            <TextView
+                android:id="@+id/lastRecordedIllness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-------------"
+                android:textColor="@color/blue"
+                android:textSize="21sp"
+                android:translationX="90dp"
+                android:translationY="19dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/diagnosisBtn"
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                android:alpha="0.01"
+                android:text="02"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:translationX="5dp"
+                android:translationY="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Healthcare</string>
+    <string-array name="Sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heart"><u>Heart Rate</u></string>
+    <string name="temp"><u>Body Temperature</u></string>
+    <string name="glucose"><u>Blood Glucose</u></string>
+    <string name="o2"><u>02 Saturation</u></string>
+    <string name="chatbot"><u>MediBot</u></string>
+    <string name="profile"><u>User Profile</u></string>
+    <string name="week"><u>Weekly</u></string>
+    <string name="month"><u>Monthly</u></string>
+    <string name="diagnosis"><u>Last Identified Diagnosis</u></string>
+</resources>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Diagnosis">
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text"
+        android:translationX="336dp"
+        android:translationY="15dp">
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:translationX="11dp"
+            android:translationY="9dp"
+            card_view:srcCompat="@drawable/home" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diagnosis"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:translationX="34dp"
+        android:translationY="28dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_text"
+        android:translationY="72dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/disease"
+            android:translationX="16dp"
+            android:translationY="3dp"/>
+
+        <TextView
+            android:id="@+id/RecordedIllness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-------------"
+            android:textColor="@color/blue"
+            android:textSize="21sp"
+            android:translationX="95dp"
+            android:translationY="19dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="361dp"
+        android:layout_height="509dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_text"
+        android:translationY="175dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/heart"
+            android:translationX="18dp"
+            android:translationY="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/temp"
+            android:translationX="107dp"
+            android:translationY="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/glucose"
+            android:translationX="192dp"
+            android:translationY="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:src="@drawable/o2"
+            android:translationX="276dp"
+            android:translationY="25dp" />
+
+        <TextView
+            android:id="@+id/lastMonitoredHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="---- BPM"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="65dp" />
+
+        <TextView
+            android:id="@+id/lastMonitoredTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="-------- °C"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="104dp"
+            android:translationY="65dp" />
+
+        <TextView
+            android:id="@+id/lastMonitoredGlucose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="----------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="196dp"
+            android:translationY="65dp" />
+
+        <TextView
+            android:id="@+id/lastMonitoredO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="---- %"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="65dp" />
+
+        <TextView
+            android:id="@+id/glucoseUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="mg/dl"
+            android:textColor="#0066FF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:translationX="202dp"
+            android:translationY="88dp" />
+
+        <TextView
+            android:id="@+id/heartDiagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Diagnosis of Heart Rate"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="130dp" />
+
+        <TextView
+            android:id="@+id/tempDiagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Diagnosis of Body Temperature"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="160dp" />
+
+        <TextView
+            android:id="@+id/glucoseDiagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Diagnosis of Blood Glucose Level"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="190dp" />
+
+        <TextView
+            android:id="@+id/o2Diagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Diagnosis of Blood Oxygen Level"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="220dp" />
+
+        <TextView
+            android:id="@+id/symptomsDiagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Symptoms Faced: "
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="250dp" />
+
+        <TextView
+            android:id="@+id/bmiDiagnosis"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="BMI: "
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="280dp" />
+
+        <TextView
+            android:id="@+id/vitalsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Body Vital Score: "
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="315dp" />
+
+        <TextView
+            android:id="@+id/vitalsScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="315dp" />
+
+        <TextView
+            android:id="@+id/symptomsScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="340dp" />
+
+        <TextView
+            android:id="@+id/symptomsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Symptom Score: "
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="340dp" />
+
+        <TextView
+            android:id="@+id/bmiScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="365dp" />
+
+        <TextView
+            android:id="@+id/bmiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="BMI Score: "
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="365dp" />
+
+        <TextView
+            android:id="@+id/otherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Other Factors: "
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="390dp" />
+
+        <TextView
+            android:id="@+id/otherScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="390dp" />
+
+        <TextView
+            android:id="@+id/finalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Total Diagnosis Score: "
+            android:textColor="@color/blue"
+            android:textSize="21sp"
+            android:textStyle="normal"
+            android:translationX="14dp"
+            android:translationY="428dp" />
+
+        <TextView
+            android:id="@+id/recommendScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="------"
+            android:textColor="#0066FF"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            android:translationX="285dp"
+            android:translationY="428dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

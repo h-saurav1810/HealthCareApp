@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chatbot">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chatbot"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:translationX="165dp"
+        android:translationY="28dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRV"
+        android:layout_width="match_parent"
+        android:layout_height="579dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="ifContentScrolls"
+        android:padding="20sp"
+        android:translationY="95dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="30" />
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text"
+        android:translationX="336dp"
+        android:translationY="15dp">
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:translationX="11dp"
+            android:translationY="9dp"
+            card_view:srcCompat="@drawable/home" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/sendMessage"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:drawablePadding="8dp"
+        android:hint="Start talking with MediBot ..."
+        android:textColor="@color/grey"
+        android:textSize="19sp"
+        android:translationX="18dp"
+        android:translationY="695dp" />
+
+    <FrameLayout
+        android:id="@+id/sendFrame"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text"
+        android:translationX="336dp"
+        android:translationY="692dp">
+
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:translationX="15dp"
+            android:translationY="10dp"
+            card_view:srcCompat="@drawable/baseline_send_24" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
